@@ -1,0 +1,17 @@
+{
+  "name": "twetch-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@twetch/sdk": "^0.2.9",
+    "dotenv": "^8.2.0",
+    "rss-parser": "^3.9.0"
+  }
+}
