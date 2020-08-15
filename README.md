@@ -1,7 +1,7 @@
 # TonicPow: Twetch Bot
-> The official bot for posting on [Twetch](https://twetch.app)
+> The official TonicPow bot for posting on [Twetch](https://twetch.app)
 
-[![Release](https://img.shields.io/github/release-pre/tonicpow/twetch-bot.svg?logo=github&style=flat)](https://github.com/tonicpow/twetch-bot/releases)
+[![Release](https://img.shields.io/github/release-pre/tonicpow/twetch-bot.svg?logo=github&style=flat&v=1)](https://github.com/tonicpow/twetch-bot/releases)
 [![Slack](https://img.shields.io/badge/slack-tonicpow-orange.svg?logo=slack&style=flat)](https://atlantistic.slack.com/app_redirect?channel=tonicpow)
 
 <br/>
@@ -54,7 +54,7 @@ Required environment variables:
 - Auto post on new campaigns
 
 <details>
-<summary><strong><code>Library Deployment</code></strong></summary>
+<summary><strong><code>Release Deployment</code></strong></summary>
 <br/>
 
 [goreleaser](https://github.com/goreleaser/goreleaser) for easy binary or library deployment to Github and can be installed via: `brew install goreleaser`.
