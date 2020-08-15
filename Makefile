@@ -1,3 +1,16 @@
+# Common makefile commands & variables between projects
+include .make/Makefile.common
+
+## Not defined? Use default repo name which is the application
+ifeq ($(REPO_NAME),)
+	REPO_NAME="twetch-bot"
+endif
+
+## Not defined? Use default repo owner
+ifeq ($(REPO_OWNER),)
+	REPO_OWNER="tonicpow"
+endif
+
 .PHONY: clean
 
 audit: ## Checks for vulnerabilities in dependencies
