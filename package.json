@@ -1,14 +1,50 @@
 {
   "name": "twetch-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automatically post to Twetch on TonicPow events",
   "main": "index.js",
   "scripts": {
+    "lint": "standard --fix || true",
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Josh",
+      "url": "https://github.com/jdh7190/"
+    },
+    {
+      "name": "Satchmo",
+      "url": "https://github.com/rohenaz/"
+    },
+    {
+      "name": "MrZ",
+      "url": "https://github.com/mrz1836/"
+    }
+  ],
+  "keywords": [
+    "tonic",
+    "tonicpow",
+    "twetch",
+    "bot",
+    "bitcoin",
+    "bsv"
+  ],
+  "author": {
+    "name": "Josh",
+    "url": "https://github.com/jdh7190/"
+  },
+  "bugs": {
+    "url": "https://github.com/tonicpow/embed/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonicpow/twetch-bot/"
+  },
+  "license": "Open BSV",
+  "homepage": "https://docs.tonicpow.com",
+  "engines": {
+    "node": "*"
+  },
   "dependencies": {
     "@twetch/sdk": "^0.2.9",
     "dotenv": "^8.2.0",
