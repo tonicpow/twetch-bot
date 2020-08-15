@@ -2,6 +2,7 @@ require('dotenv').config()
 const Parser = require('rss-parser')
 const Twetch = require('@twetch/sdk')
 const parser = new Parser()
+// todo: create an env for environment (different urls)
 const RSSURL = 'https://offers.tonicpow.com/functions/campaignsFeed/'
 let latestURL, account;
 const getFeed = async (feedURL, latest) => {
@@ -14,8 +15,8 @@ const getFeed = async (feedURL, latest) => {
       let content = `New Campaign created by ${item.author}: ${item.title}
       
 ${item.link}`
-      let txid = await post(account, content, '', '', '')
-      console.log('TXID: ', txid)
+      let txId = await post(account, content, '', '', '')
+      console.log('txId: ', txId)
       await sleep(10000) // recommend to wait 10 seconds between broadcasts
     }
     latestURL = items[0].link
