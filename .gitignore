@@ -1,0 +1,5 @@
+.env
+.bit
+logs
+build
+node_modules
