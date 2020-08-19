@@ -9,6 +9,20 @@
     "start": "nodemon ./build/index.js",
     "prod": "yarn build && yarn start"
   },
+  "contributors": [
+    {
+      "name": "Josh",
+      "url": "https://github.com/jdh7190/"
+    },
+    {
+      "name": "Satchmo",
+      "url": "https://github.com/rohenaz/"
+    },
+    {
+      "name": "MrZ",
+      "url": "https://github.com/mrz1836/"
+    }
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
