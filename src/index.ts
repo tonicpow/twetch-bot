@@ -1,5 +1,6 @@
 require('dotenv').config()
-import * as Twetch from '@twetch/sdk'
+const TwetchClient = require('@twetch/sdk')
+import TwetchClientType from '@twetch/sdk'
 import * as Parser from 'rss-parser'
 import * as winston from 'winston'
 const parser = new Parser()
@@ -19,7 +20,7 @@ const logger = winston.createLogger({
 
 const RSSURL = 'https://offers.staging.tonicpow.com/functions/campaignsFeed/'
 var latestURL: string
-var account: Twetch.Client
+var account: TwetchClientType
 
 const getFeed = async (feedURL: string, latest: string) => {
   let feed = await parser.parseURL(feedURL)
@@ -46,7 +47,7 @@ const getLatestURL = async (url) => {
 }
 
 function initTwetch() {
-  const twetch = new Twetch.Client({
+  const twetch: TwetchClientType = new TwetchClient({
     clientIdentifier: process.env.TWETCH_CLIENT_ID,
     privateKey: process.env.TWETCH_PK,
   })
@@ -61,7 +62,7 @@ async function getBalance(instance) {
 }
 
 const post = async (
-  instance: Twetch.Client,
+  instance: TwetchClientType,
   content: string,
   reply: string,
   branch: string,
