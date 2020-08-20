@@ -6,15 +6,17 @@ import * as winston from 'winston'
 const parser = new Parser()
 
 type FeedItem = {
+  author: string
   link: string
+  title: string
 }
 
 const logger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
   transports: [
-    new winston.transports.File({ filename: '../logs/error.log', level: 'error' }),
-    new winston.transports.File({ filename: '../logs/combined.log' }),
+    new winston.transports.File({ filename: './logs/error.log', level: 'error' }),
+    new winston.transports.File({ filename: './logs/combined.log' }),
   ],
 })
 
@@ -29,9 +31,8 @@ const getFeed = async (feedURL: string, latest: string) => {
   if (foundItem > 0) {
     let items = feed.items.slice(0, foundItem)
     for (let item of items) {
-      let content = `New Campaign created by ${item.author}: ${item.title}
-      
-${item.link}`
+      logger.info(`\u{1F4B2} New Campaign created by ${item.author}: ${item.title}\n\n${item.link}`)
+      let content = `Testing something cool... \u{1F440}` //`New Campaign created by ${item.author}: ${item.title}\n\n${item.link}`
       let txid = await post(account, content, '', '', '', false, false)
       logger.info(`TXID: ${txid}`)
       await sleep(10000) // recommend to wait 10 seconds between broadcasts

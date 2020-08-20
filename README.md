@@ -1,4 +1,5 @@
 # TonicPow: Twetch Bot
+
 > The official TonicPow bot for posting on [Twetch](https://twetch.app)
 
 [![Release](https://img.shields.io/github/release-pre/tonicpow/twetch-bot.svg?logo=github&style=flat&v=1)](https://github.com/tonicpow/twetch-bot/releases)
@@ -7,6 +8,7 @@
 <br/>
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Documentation](#documentation)
 - [Examples & Tests](#examples--tests)
@@ -16,14 +18,53 @@
 
 <br/>
 
+## Pre-Requisites
+
+These are required for building and runnng the Typescipt project:
+
+```shell script
+yarn global add tsc
+yarn global add ts-node-dev
+```
+
 ## Installation
 
+#### Yarn
+
+Install:
+
+```shell script
+yarn
+```
+
+Local development (watch):
+
+```shell script
+yarn dev
+```
+
+Build & run with:
+
+```shell script
+yarn prod
+```
+
+#### PM2
+
+```shell script
+pm2 start yarn --name api -- prod
+```
+
+#### Make
+
 **twetch-bot** requires a [supported release of Node](https://nodejs.org/en/download/).
+
 ```shell script
 make install
 ```
 
-Run the bot:
+Run the bot with:
+
 ```shell script
 make start
 ```
@@ -31,6 +72,7 @@ make start
 <br/>
 
 ## Documentation
+
 The bot will query `RSSURL` to check for new campaigns every X seconds as defined in the `refreshRate` parameter in the .env file.
 
 If new campaigns are found, then the bot will automatically [twetch](https://twetch.app) those links with the `privateKey` configured in the .env file.
@@ -44,12 +86,14 @@ The [client identifier](https://twetch.app/developer) should also be configured 
 <br/>
 
 Required environment variables:
+
 - `TWETCH_CLIENT_ID` (twetch client id)
 - `TWETCH_PK` (private key for twetch account)
 - `TWETCH_REFRESH_RATE` (rate to refresh/fetch new rss)
 </details>
 
 ### Features
+
 - Consume the TonicPow RSS feed
 - Auto post on new campaigns
 
@@ -62,6 +106,7 @@ Required environment variables:
 The [.goreleaser.yml](.goreleaser.yml) file is used to configure [goreleaser](https://github.com/goreleaser/goreleaser).
 
 Use `make release-snap` to create a snapshot version of the release, and finally `make release` to ship to production.
+
 </details>
 
 <details>
@@ -69,11 +114,13 @@ Use `make release-snap` to create a snapshot version of the release, and finally
 <br/>
 
 View all `makefile` commands
+
 ```shell script
 make help
 ```
 
 List of all current commands:
+
 ```text
 audit                          Checks for vulnerabilities in dependencies
 clean                          Remove previous builds and any test cache data
@@ -90,23 +137,27 @@ tag-remove                     Remove a tag if found (IE: tag-remove version=0.0
 tag-update                     Update an existing tag to current commit (IE: tag-update version=0.0.0)
 update-releaser                Update the goreleaser application
 ```
+
 </details>
 
 <br/>
 
 ## Examples & Tests
+
 Tests & examples coming soon!
 
 <br/>
 
 ## Maintainers
+
 | [<img src="https://github.com/jdh7190.png" height="50" alt="Josh" />](https://github.com/jdh7190) | [<img src="https://github.com/rohenaz.png" height="50" alt="Satchmo" />](https://github.com/rohenaz) | [<img src="https://github.com/mrz1836.png" height="50" alt="MrZ" />](https://github.com/mrz1836) |
-|:---:|:---:|:---:|
-| [Josh](https://github.com/jdh7190) | [Satchmo](https://github.com/rohenaz) | [MrZ](https://github.com/mrz1836) |
+| :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+|                                [Josh](https://github.com/jdh7190)                                 |                                [Satchmo](https://github.com/rohenaz)                                 |                                [MrZ](https://github.com/mrz1836)                                 |
 
 <br/>
 
 ## Contributing
+
 View the [contributing guidelines](CONTRIBUTING.md) and follow the [code of conduct](CODE_OF_CONDUCT.md).
 
 Support the development of this project 🙏

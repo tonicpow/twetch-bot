@@ -4,10 +4,8 @@
   "description": "A bot that posts TonicPow events to Twetch",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node index.ts",
-    "start": "nodemon ./build/index.js",
-    "prod": "yarn build && yarn start"
+    "dev": "ts-node-dev src/index.ts",
+    "prod": "tsc && ts-node ./build/index.js"
   },
   "contributors": [
     {
