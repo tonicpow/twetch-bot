@@ -1,11 +1,11 @@
 {
   "name": "twetch-bot",
-  "version": "1.0.1",
-  "description": "Automatically post to Twetch on TonicPow events",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A bot that posts TonicPow events to Twetch",
+  "type": "commonjs",
   "scripts": {
-    "lint": "standard --fix || true",
-    "start": "node index.js"
+    "dev": "ts-node-dev src/index.ts",
+    "prod": "tsc && ts-node ./build/index.js"
   },
   "contributors": [
     {
@@ -21,33 +21,29 @@
       "url": "https://github.com/mrz1836/"
     }
   ],
-  "keywords": [
-    "tonic",
-    "tonicpow",
-    "twetch",
-    "bot",
-    "bitcoin",
-    "bsv"
-  ],
-  "author": {
-    "name": "Josh",
-    "url": "https://github.com/jdh7190/"
-  },
-  "bugs": {
-    "url": "https://github.com/tonicpow/embed/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tonicpow/twetch-bot/"
-  },
-  "license": "Open BSV",
-  "homepage": "https://docs.tonicpow.com",
-  "engines": {
-    "node": "*"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100,
+    "semi": false
   },
   "dependencies": {
     "@twetch/sdk": "^0.2.9",
+    "@types/node": "^14.0.9",
+    "@types/winston": "^2.4.4",
+    "prettier": "^2.0.5",
+    "rss-parser": "^3.9.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
     "dotenv": "^8.2.0",
-    "rss-parser": "^3.9.0"
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.3",
+    "typescript": "^3.9.3"
   }
 }
