@@ -43,7 +43,7 @@ ${item.link}`
   }
 }
 
-const getLatestURL = async (url) => {
+const getLatestURL = async (url: string) => {
   let feed = await parser.parseURL(url)
   logger.info(`Latest URL: ${feed.items[0].link}`)
   return feed.items[0].link
