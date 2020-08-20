@@ -20,7 +20,7 @@ const logger = winston.createLogger({
   ],
 })
 
-const RSSURL = 'https://offers.staging.tonicpow.com/functions/campaignsFeed/'
+const RSSURL = 'https://offers.tonicpow.com/functions/campaignsFeed/'
 var latestURL: string
 var account: TwetchClientType
 
@@ -31,8 +31,10 @@ const getFeed = async (feedURL: string, latest: string) => {
   if (foundItem > 0) {
     let items = feed.items.slice(0, foundItem)
     for (let item of items) {
-      logger.info(`\u{1F4B2} New Campaign created by ${item.author}: ${item.title}\n\n${item.link}`)
-      let content = `Testing something cool... \u{1F440}` //`New Campaign created by ${item.author}: ${item.title}\n\n${item.link}`
+      let content = `\u{1F4B2} New Campaign created by ${item.author}: ${item.title}
+      
+${item.link}`
+      logger.info(content)
       let txid = await post(account, content, '', '', '', false, false)
       logger.info(`TXID: ${txid}`)
       await sleep(10000) // recommend to wait 10 seconds between broadcasts
@@ -41,7 +43,7 @@ const getFeed = async (feedURL: string, latest: string) => {
   }
 }
 
-const getLatestURL = async (url) => {
+const getLatestURL = async (url: string) => {
   let feed = await parser.parseURL(url)
   logger.info(`Latest URL: ${feed.items[0].link}`)
   return feed.items[0].link
