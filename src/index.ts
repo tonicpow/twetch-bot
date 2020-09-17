@@ -3,6 +3,7 @@ const TwetchClient = require('@twetch/sdk')
 import TwetchClientType from '@twetch/sdk'
 import * as Parser from 'rss-parser'
 import * as winston from 'winston'
+
 const parser = new Parser()
 
 type FeedItem = {
@@ -25,28 +26,40 @@ var latestURL: string
 var account: TwetchClientType
 
 const getFeed = async (feedURL: string, latest: string) => {
-  let feed = await parser.parseURL(feedURL)
-  let foundItem = feed.items.findIndex((idx: FeedItem) => idx.link === latest)
-  logger.log({ level: 'info', message: `${feed.title} Found item index: ${foundItem}` })
-  if (foundItem > 0) {
-    let items = feed.items.slice(0, foundItem)
-    for (let item of items) {
-      let content = `\u{1F4B2} New Campaign created by ${item.author}: ${item.title}
-      
-${item.link}`
-      logger.info(content)
-      let txid = await post(account, content, '', '', '', false, false)
-      logger.info(`TXID: ${txid}`)
-      await sleep(10000) // recommend to wait 10 seconds between broadcasts
+  try {
+    let feed = await parser.parseURL(feedURL)
+    let foundItem = feed.items.findIndex((idx: FeedItem) => idx.link === latest)
+    logger.log({ level: 'info', message: `${feed.title} Found item index: ${foundItem}` })
+    if (foundItem > 0) {
+      let items = feed.items.slice(0, foundItem)
+      for (let item of items) {
+        let content = `\u{1F4B2} New Campaign created by ${item.author}: ${item.title}
+        
+  ${item.link}`
+        logger.info(content)
+        try {
+          let txid = await post(account, content, '', '', '', false, false)
+          logger.info(`TXID: ${txid}`)
+        } catch (e) {
+          throw e
+        }
+        await sleep(10000) // recommend to wait 10 seconds between broadcasts
+      }
+      latestURL = items[0].link
     }
-    latestURL = items[0].link
+  } catch (e) {
+    throw e
   }
 }
 
 const getLatestURL = async (url: string) => {
-  let feed = await parser.parseURL(url)
-  logger.info(`Latest URL: ${feed.items[0].link}`)
-  return feed.items[0].link
+  try {
+    let feed = await parser.parseURL(url)
+    logger.info(`Latest URL: ${feed.items[0].link}`)
+    return feed.items[0].link
+  } catch (e) {
+    throw e
+  }
 }
 
 function initTwetch() {
@@ -93,9 +106,19 @@ const sleep = (timeout: number) => {
 const main = async () => {
   account = initTwetch()
   getBalance(account)
-  latestURL = await getLatestURL(`${RSSURL}?cacheBust=${Date.now()}`)
+  try {
+    latestURL = await getLatestURL(`${RSSURL}?cacheBust=${Date.now()}`)
+  } catch (e) {
+    logger.error(e)
+    return
+  }
+
   while (true) {
-    await getFeed(`${RSSURL}?cacheBust=${Date.now()}`, latestURL)
+    try {
+      await getFeed(`${RSSURL}?cacheBust=${Date.now()}`, latestURL)
+    } catch (e) {
+      logger.error(e)
+    }
     await sleep(parseInt(process.env.TWETCH_REFRESH_RATE))
   }
 }
