@@ -1,3 +1,10 @@
+.env
+.bit
+logs
+build
+node_modules
+yarn-error.log
+
 # Logs
 logs
 *.log
