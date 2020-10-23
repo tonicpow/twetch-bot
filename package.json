@@ -30,10 +30,7 @@
     "semi": false
   },
   "dependencies": {
-<<<<<<< HEAD
     "@twetch/sdk": "^0.2.11",
-=======
-    "@twetch/sdk": "^0.2.9",
     "@types/node": "^14.0.9",
     "@types/winston": "^2.4.4",
     "prettier": "^2.0.5",
@@ -41,13 +38,12 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
->>>>>>> d93e4edbb8d5d6f40faa5e0e404090bab4990161
     "dotenv": "^8.2.0",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-node": "latest",
     "eslint-plugin-prettier": "^3.1.4",
     "nodemon": "^2.0.3",
-    "typescript": "^3.9.3"
+    "typescript": "^4.0.3"
   }
 }
