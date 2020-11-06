@@ -44,10 +44,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@twetch/sdk@^0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@twetch/sdk/-/sdk-0.2.9.tgz#44ebcd0b04c6b02d3f5996c4d24a157640d73cdb"
-  integrity sha512-lre3sOuNm3MKe0AlVeh6rNdegunD5R7fHDl3vSqQGOK+TOlFC+cH0JOFo1hyDqpNWja29OBd5umPY5Vy9yY0TQ==
+"@twetch/sdk@^0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@twetch/sdk/-/sdk-0.2.11.tgz#3968e2b70bda9ac8747ba17a491d57b52210d057"
+  integrity sha512-03uKYdXNumNka3/c4EK3p4PRrKJd0UJJkbmhfG9JBVRLhCmrSzKXQssc8phGidzStju8UCa1boI0SQ+rEp2luA==
   dependencies:
     axios "0.19.1"
     buffer "5.4.3"
@@ -1639,10 +1639,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^3.9.3:
-  version "3.9.7"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
-  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+typescript@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
+  integrity sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
 
 undefsafe@^2.0.2:
   version "2.0.3"
