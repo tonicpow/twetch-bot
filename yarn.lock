@@ -44,10 +44,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@twetch/sdk@^0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@twetch/sdk/-/sdk-0.2.9.tgz#44ebcd0b04c6b02d3f5996c4d24a157640d73cdb"
-  integrity sha512-lre3sOuNm3MKe0AlVeh6rNdegunD5R7fHDl3vSqQGOK+TOlFC+cH0JOFo1hyDqpNWja29OBd5umPY5Vy9yY0TQ==
+"@twetch/sdk@^0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@twetch/sdk/-/sdk-0.2.11.tgz#3968e2b70bda9ac8747ba17a491d57b52210d057"
+  integrity sha512-03uKYdXNumNka3/c4EK3p4PRrKJd0UJJkbmhfG9JBVRLhCmrSzKXQssc8phGidzStju8UCa1boI0SQ+rEp2luA==
   dependencies:
     axios "0.19.1"
     buffer "5.4.3"
@@ -58,10 +58,10 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-"@types/node@^14.0.9":
-  version "14.6.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.6.0.tgz#7d4411bf5157339337d7cff864d9ff45f177b499"
-  integrity sha512-mikldZQitV94akrc4sCcSjtJfsTKt4p+e/s0AGscVA6XArQ9kFclP+ZiYUMnq987rc6QlYxXv/EivqlfSLxpKA==
+"@types/node@^14.14.6":
+  version "14.14.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.6.tgz#146d3da57b3c636cc0d1769396ce1cfa8991147f"
+  integrity sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
 
 "@types/winston@^2.4.4":
   version "2.4.4"
@@ -1639,10 +1639,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^3.9.3:
-  version "3.9.7"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
-  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+typescript@^4.0.3:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
+  integrity sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
 
 undefsafe@^2.0.2:
   version "2.0.3"
