@@ -61,9 +61,9 @@
     buffer "5.4.3"
     yargs "15.1.0"
 
-"@types/node@^14.14.6":
-  version "14.14.6"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.6.tgz"
+"@types/node@^14.14.7":
+  version "14.14.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.7.tgz#8ea1e8f8eae2430cf440564b98c6dfce1ec5945d"
 
 "@types/winston@^2.4.4":
   version "2.4.4"
