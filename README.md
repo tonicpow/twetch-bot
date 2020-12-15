@@ -162,7 +162,7 @@ View the [contributing guidelines](CONTRIBUTING.md) and follow the [code of cond
 
 Support the development of this project 🙏
 
-[![Donate](https://img.shields.io/badge/donate-bitcoin-brightgreen.svg)](https://tonicpow.com/?af=twetch-bot)
+[![Donate](https://img.shields.io/badge/donate-bitcoin-brightgreen.svg)](https://tonicpow.com/?utm_source=github&utm_medium=sponsor-link&utm_campaign=twetch-bot&utm_term=twetch-bot&utm_content=twetch-bot)
 
 <br/>
 
