@@ -40,7 +40,7 @@
   "devDependencies": {
     "dotenv": "^8.2.0",
     "eslint": "^7.18.0",
-    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-node": "latest",
     "eslint-plugin-prettier": "^3.3.1",
     "nodemon": "^2.0.7",
