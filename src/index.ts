@@ -21,7 +21,7 @@ const logger = winston.createLogger({
   ],
 })
 
-const RSSURL = 'https://offers.tonicpow.com/functions/campaignsFeed/'
+const RSSURL = 'https://webserver.tonicpow.com/v1/campaigns/feed?feed_type=rss'
 var latestURL: string
 var account: TwetchClientType
 
