@@ -34,7 +34,7 @@
     "@types/node": "^14.14.22",
     "@types/winston": "^2.4.4",
     "prettier": "^2.2.1",
-    "rss-parser": "^3.10.0",
+    "rss-parser": "^3.11.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
