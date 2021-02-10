@@ -53,9 +53,9 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@twetch/sdk@^0.2.11":
-  version "0.2.11"
-  resolved "https://registry.npmjs.org/@twetch/sdk/-/sdk-0.2.11.tgz"
+"@twetch/sdk@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@twetch/sdk/-/sdk-0.2.12.tgz#80f1a78c0585cd8e6bbdc1ad965533997e4f79aa"
   dependencies:
     axios "0.19.1"
     buffer "5.4.3"
