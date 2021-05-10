@@ -38,7 +38,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "dotenv": "^9.0.0",
+    "dotenv": "^9.0.1",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-node": "latest",
