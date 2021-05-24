@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@twetch/sdk": "^0.2.12",
-    "@types/node": "^15.3.1",
+    "@types/node": "^15.6.0",
     "@types/winston": "^2.4.4",
     "prettier": "^2.3.0",
     "rss-parser": "^3.12.0",
