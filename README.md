@@ -2,8 +2,11 @@
 
 > The official TonicPow bot for posting on [Twetch](https://twetch.app)
 
-[![Release](https://img.shields.io/github/release-pre/tonicpow/twetch-bot.svg?logo=github&style=flat&v=1)](https://github.com/tonicpow/twetch-bot/releases)
-[![Slack](https://img.shields.io/badge/slack-tonicpow-orange.svg?logo=slack&style=flat)](https://atlantistic.slack.com/app_redirect?channel=tonicpow)
+[![last commit](https://img.shields.io/github/last-commit/tonicpow/twetch-bot.svg?style=flat&v=1)](https://github.com/tonicpow/twetch-bot/commits/master)
+[![version](https://img.shields.io/github/release-pre/tonicpow/twetch-bot.svg?style=flat&v=1)](https://github.com/tonicpow/twetch-bot/releases)
+[![Build Status](https://img.shields.io/github/workflow/status/tonicpow/twetch-bot/CodeQL?logo=github&v=5)](https://github.com/tonicpow/twetch-bot/actions)
+[![Sponsor](https://img.shields.io/badge/sponsor-TonicPow-181717.svg?logo=github&style=flat&v=1)](https://github.com/sponsors/TonicPow)
+[![slack](https://img.shields.io/badge/slack-tonicpow-orange.svg?style=flat&v=1)](https://atlantistic.slack.com/app_redirect?channel=tonicpow)
 
 <br/>
 
@@ -20,7 +23,7 @@
 
 ## Pre-Requisites
 
-These are required for building and runnng the Typescipt project:
+These are required for building and running the Typescript project:
 
 ```shell script
 yarn global add tsc
@@ -125,7 +128,7 @@ List of all current commands:
 audit                          Checks for vulnerabilities in dependencies
 clean                          Remove previous builds and any test cache data
 help                           Show all commands available
-install                        Installs the dependencies for the packge
+install                        Installs the dependencies for the package
 lint                           Runs the standard-js lint tool
 outdated                       Checks for outdated packages via npm
 release                        Full production release (creates release in Github)
