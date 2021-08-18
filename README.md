@@ -5,6 +5,8 @@
 [![last commit](https://img.shields.io/github/last-commit/tonicpow/twetch-bot.svg?style=flat&v=1)](https://github.com/tonicpow/twetch-bot/commits/master)
 [![version](https://img.shields.io/github/release-pre/tonicpow/twetch-bot.svg?style=flat&v=1)](https://github.com/tonicpow/twetch-bot/releases)
 [![Build Status](https://img.shields.io/github/workflow/status/tonicpow/twetch-bot/CodeQL?logo=github&v=5)](https://github.com/tonicpow/twetch-bot/actions)
+[![Mergify Status](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/tonicpow/twetch-bot&style=flat&v=5)](https://mergify.io)
+<br>
 [![Sponsor](https://img.shields.io/badge/sponsor-TonicPow-181717.svg?logo=github&style=flat&v=1)](https://github.com/sponsors/TonicPow)
 [![slack](https://img.shields.io/badge/slack-tonicpow-orange.svg?style=flat&v=1)](https://atlantistic.slack.com/app_redirect?channel=tonicpow)
 
@@ -160,12 +162,16 @@ Tests & examples coming soon!
 <br/>
 
 ## Contributing
+View the [contributing guidelines](CONTRIBUTING.md) and please follow the [code of conduct](CODE_OF_CONDUCT.md).
 
-View the [contributing guidelines](CONTRIBUTING.md) and follow the [code of conduct](CODE_OF_CONDUCT.md).
+### How can I help?
+All kinds of contributions are welcome :raised_hands:!
+The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon:.
+You can also support this project by [becoming a sponsor on GitHub](https://github.com/sponsors/tonicpow) :clap:
+or by making a [**bitcoin donation**](https://tonicpow.com/?utm_source=github&utm_medium=sponsor-link&utm_campaign=twetch-bot&utm_term=twetch-bot&utm_content=twetch-bot) to ensure this journey continues indefinitely! :rocket:
 
-Support the development of this project 🙏
 
-[![Donate](https://img.shields.io/badge/donate-bitcoin-brightgreen.svg)](https://tonicpow.com/?utm_source=github&utm_medium=sponsor-link&utm_campaign=twetch-bot&utm_term=twetch-bot&utm_content=twetch-bot)
+[![Stars](https://img.shields.io/github/stars/tonicpow/twetch-bot?label=Please%20like%20us&style=social)](https://github.com/tonicpow/twetch-bot/stargazers)
 
 <br/>
 
