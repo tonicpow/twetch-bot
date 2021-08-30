@@ -72,9 +72,9 @@
     buffer "5.4.3"
     yargs "15.1.0"
 
-"@types/node@^16.7.2":
-  version "16.7.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.2.tgz#0465a39b5456b61a04d98bd5545f8b34be340cb7"
+"@types/node@^16.7.6":
+  version "16.7.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.6.tgz#8666478db8095aa66e25b7e469f3e7b53ea2855e"
 
 "@types/winston@^2.4.4":
   version "2.4.4"
