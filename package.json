@@ -35,7 +35,7 @@
     "@types/winston": "^2.4.4",
     "prettier": "^2.5.1",
     "rss-parser": "^3.12.0",
-    "winston": "^3.3.3"
+    "winston": "^3.3.4"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
