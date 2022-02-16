@@ -156,13 +156,13 @@ Tests & examples coming soon!
 ## Maintainers
 
 | [<img src="https://github.com/jdh7190.png" height="50" alt="Josh" />](https://github.com/jdh7190) | [<img src="https://github.com/rohenaz.png" height="50" alt="Satchmo" />](https://github.com/rohenaz) | [<img src="https://github.com/mrz1836.png" height="50" alt="MrZ" />](https://github.com/mrz1836) |
-| :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
 |                                [Josh](https://github.com/jdh7190)                                 |                                [Satchmo](https://github.com/rohenaz)                                 |                                [MrZ](https://github.com/mrz1836)                                 |
 
 <br/>
 
 ## Contributing
-View the [contributing guidelines](CONTRIBUTING.md) and please follow the [code of conduct](CODE_OF_CONDUCT.md).
+View the [contributing guidelines](.github/CONTRIBUTING.md) and please follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
 
 ### How can I help?
 All kinds of contributions are welcome :raised_hands:!
