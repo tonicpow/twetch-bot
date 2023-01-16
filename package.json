@@ -33,7 +33,7 @@
     "@twetch/sdk": "^0.2.12",
     "@types/node": "^18.11.18",
     "@types/winston": "^2.4.4",
-    "prettier": "^2.8.2",
+    "prettier": "^2.8.3",
     "rss-parser": "^3.12.0",
     "winston": "^3.8.2"
   },
