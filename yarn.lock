@@ -731,9 +731,9 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
 
-nodemon@^2.0.20:
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.20.tgz#e3537de768a492e8d74da5c5813cb0c7486fc701"
+nodemon@^2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.21.tgz#267edff25578da91075d6aa54346ef77ecb7b302"
   dependencies:
     chokidar "^3.5.2"
     debug "^3.2.7"
