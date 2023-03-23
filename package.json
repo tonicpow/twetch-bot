@@ -43,7 +43,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-node": "latest",
     "eslint-plugin-prettier": "^4.2.1",
-    "nodemon": "^2.0.21",
+    "nodemon": "^2.0.22",
     "typescript": "^5.0.2"
   }
 }
