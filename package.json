@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
-    "eslint": "^9.1.0",
+    "eslint": "^9.1.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-node": "latest",
     "eslint-plugin-prettier": "^5.1.3",
