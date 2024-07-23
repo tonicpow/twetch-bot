@@ -44,6 +44,6 @@
     "eslint-plugin-node": "latest",
     "eslint-plugin-prettier": "^5.2.1",
     "nodemon": "^3.1.4",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }
