@@ -1062,9 +1062,9 @@ winston-transport@^4.7.0:
     readable-stream "^3.6.0"
     triple-beam "^1.3.0"
 
-winston@*, winston@^3.13.1:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/winston/-/winston-3.13.1.tgz#53ddadb9c2332eb12cff8306413b3480dc82b6c3"
+winston@*, winston@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/winston/-/winston-3.14.0.tgz#589e5dd6b458ae4ef0a4dd0190a6c077488f1cee"
   dependencies:
     "@colors/colors" "^1.6.0"
     "@dabh/diagnostics" "^2.0.2"
