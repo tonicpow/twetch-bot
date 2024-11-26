@@ -828,9 +828,9 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.3.tgz#30c54fe0be0d8d12e6ae61dbb10109ea00d53105"
+prettier@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.4.0.tgz#9dcd5e617cf103db8e4bd00924baecfd32bf9971"
 
 pstree.remy@^1.1.8:
   version "1.1.8"
