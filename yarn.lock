@@ -114,9 +114,9 @@
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
 
-"@types/node@^22.10.9":
-  version "22.10.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.9.tgz#b62b5e8485b9b412262466209280405525320108"
+"@types/node@^22.10.10":
+  version "22.10.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.10.tgz#85fe89f8bf459dc57dfef1689bd5b52ad1af07e6"
   dependencies:
     undici-types "~6.20.0"
 
